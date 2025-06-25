@@ -1,0 +1,82 @@
+
+#mainframe-drawer {
+  position: fixed;
+  top: 0;
+  right: -320px;
+  width: 320px;
+  height: 100vh;
+  background: #fff;
+  box-shadow: -4px 0 12px rgba(0,0,0,0.1);
+  transition: right 0.3s ease;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  overflow-y: auto;
+}
+
+#mainframe-drawer.open {
+  right: 0;
+}
+
+#mainframe-drawer-tab {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  writing-mode: vertical-rl;
+  background: #000;
+  color: #fff;
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 10px 6px;
+  border-radius: 6px 0 0 6px;
+  cursor: pointer;
+  z-index: 10000;
+}
+
+#mainframe-drawer h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 0.5rem;
+}
+
+.mainframe-filter-group {
+  margin-bottom: 1.5rem;
+}
+.mainframe-filter-group h4 {
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+.mainframe-filter-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+.mainframe-filter-button {
+  padding: 6px 12px;
+  border: 1px solid #ccc;
+  background: #f9f9f9;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 0.8rem;
+}
+.mainframe-filter-button:hover,
+.mainframe-filter-button.active {
+  border-color: #000;
+  background: #eee;
+}
+#mainframe-reset {
+  margin-top: auto;
+  padding: 0.6rem 1rem;
+  font-size: 0.8rem;
+  border: none;
+  background: #000;
+  color: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-bottom: 2rem;
+}
